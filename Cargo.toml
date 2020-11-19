@@ -1,0 +1,13 @@
+[package]
+name = "yeye"
+version = "0.1.0"
+authors = ["Quentincestino <38379985+ElFamosoKilluaah@users.noreply.github.com>"]
+edition = "2018"
+
+[build]
+target = "targets/yeye-x86.json"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+stivale = { git = "https://github.com/Quentincestino/stivale-rs" }

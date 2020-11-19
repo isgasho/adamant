@@ -1,0 +1,1 @@
+cargo xbuild --target targets/yeye-x86.json
