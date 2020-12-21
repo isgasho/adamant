@@ -1,4 +1,4 @@
-ENTRY(_start)
+ENTRY(kernel_main)
 
 SECTIONS
 {
@@ -7,9 +7,9 @@ SECTIONS
 
     .stivale2hdr ALIGN(4K) :
     {
-        KEEP(*(.stivalehdr))
+        KEEP(*(.stivale2hdr))
     }
-
+    
     .text ALIGN(4K) :
     {
         KEEP(*(.text*))

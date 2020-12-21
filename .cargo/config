@@ -1,2 +1,2 @@
 [build]
-target = "targets/yeye-x86.json"
+target = "targets/adamant-x86.json"

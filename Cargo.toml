@@ -1,11 +1,11 @@
 [package]
-name = "yeye"
+name = "adamant"
 version = "0.1.0"
 authors = ["Quentincestino <38379985+ElFamosoKilluaah@users.noreply.github.com>"]
 edition = "2018"
 
 [build]
-target = "targets/yeye-x86.json"
+rustflags = ["-C", "link-arg=-Tlinker.ld"]
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 

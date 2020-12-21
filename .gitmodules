@@ -1,0 +1,4 @@
+[submodule "thirdparty/limine"]
+	path = thirdparty/limine
+	url = https://github.com/limine-bootloader/limine.git
+	branch = v0.6-branch
