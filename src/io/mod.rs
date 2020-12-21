@@ -1,7 +1,6 @@
 pub mod serial;
 
 pub trait Io {
-
     fn write_byte(&mut self, value: u8);
 
     fn get_byte(&mut self) -> u8;
