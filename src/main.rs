@@ -2,17 +2,18 @@
 #![no_main]
 #![feature(llvm_asm)]
 
+#[macro_use]
+extern crate lazy_static;
+
 pub mod io;
 pub mod x86;
 pub mod header;
 
 use core::panic::PanicInfo;
-use io::{serial::*, *};
 
 #[no_mangle]
 pub extern "C" fn kernel_main(_stivale_struct_addr: usize) -> ! {
-    let mut serial = SerialHandle::new(COMPort::COM1);
-    serial.write_str("Salut ca gaze");
+    println!("Salut ca gaze");
 
     loop {}
 }
