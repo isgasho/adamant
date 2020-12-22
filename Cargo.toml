@@ -11,3 +11,5 @@ rustflags = ["-C", "link-arg=-Tlinker.ld"]
 
 [dependencies]
 stivale = { git = "https://github.com/Quentincestino/stivale-rs" }
+lazy_static = { version = "1.4.0", features = ["spin_no_std"] }
+spin = "0.5.2"
