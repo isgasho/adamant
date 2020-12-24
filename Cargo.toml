@@ -4,12 +4,12 @@ version = "0.1.0"
 authors = ["Quentincestino <38379985+ElFamosoKilluaah@users.noreply.github.com>"]
 edition = "2018"
 
-[build]
-rustflags = ["-C", "link-arg=-Tlinker.ld"]
-
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
 stivale = { git = "https://github.com/Quentincestino/stivale-rs" }
 lazy_static = { version = "1.4.0", features = ["spin_no_std"] }
 spin = "0.5.2"
+
+[build-dependencies]
+cc = { version = "1.0.37"}
