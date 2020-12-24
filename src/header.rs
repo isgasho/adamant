@@ -1,6 +1,6 @@
 use stivale::{HeaderFramebufferTag, StivaleHeader};
+use crate::STACK;
 
-static STACK: [u8; 4096] = [0; 4096];
 static FRAMEBUFFER_TAG: HeaderFramebufferTag = HeaderFramebufferTag::new().bpp(24);
 
 #[link_section = ".stivale2hdr"]
